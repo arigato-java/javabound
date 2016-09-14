@@ -36,7 +36,13 @@ Currently, this MOD includes:
 
 ## How to install
 
-* TODO: Steam address here.
+1. Buy [Starbound at Steam].
+1. Open [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=763323158).
+1. Click **Subscribe** button.
+1. Perfect!
+
+or
+
 * TODO: The description here for manual installation.
 
    (Copy src/ directory as  Starbound/mods/javabound/ directory)
@@ -64,3 +70,5 @@ Public domain.
 
 [Starbound]: http://playstarbound.com/ "Starbound"
 [Crafting Station]: http://starbounder.org/Crafting_Station "Crafting Station - Starbounder - Starbound Wiki"
+[Steam]: http://store.steampowered.com/ "Steam"
+[Starbound at Steam]: http://store.steampowered.com/app/211820 "Starbound"
