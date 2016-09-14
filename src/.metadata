@@ -1,8 +1,9 @@
 {
   "author" : "arigato-java",
-  "description" : "World of Java in Starbound.",
+  "description" : "# Javabound\n\nThis is Java for Starbound, the PC game. Let's enjoy the JAVA world.\n\n\n## What the hell?\n\nCurrently, this MOD includes:\n\nFurnitures\n\n* あなたとジャバ as **Classical copy A**\n　It behaves a mural painting.\n\n* 今すぐダウンロード as **Classical copy B,C**\n　It behaves a mural painting.\n\n* Red Java Button as **Red Button**\n　It behaves like a `wall mounted couch`.\n\n* Blue Java Button as **Ancient Button**\n　It behaves like a `wall mounted bed`.\n\n* Red Java Block as **Red Block**, behaves like a table.\n\n\n## TODOs\n\n* TODO: Now, only in Japanese. Ready to make English version.\n* TODO: We should make `Crafting Station` for this MOD instead of `Basic crafting`.\n\n\n## Source Code\n\nhttps://github.com/arigato-java/javabound",
   "friendlyName" : "Javabound",
-  "link": "https://github.com/arigato-java/javabound",
-  "name": "javabound",
-  "version": "1.0.0"
+  "link" : "steam://url/CommunityFilePage/763323158",
+  "name" : "javabound",
+  "steamContentId" : "763323158",
+  "version" : "1.0.1"
 }
