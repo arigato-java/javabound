@@ -28,7 +28,7 @@ Currently, this MOD includes:
 
   * Blue Java Button as **Ancient Button**
 
-    It behaves like a `wall mounted couch`.
+    It behaves like a `wall mounted bed`.
 
   * Red Java Block as **Red Block**, behaves like a table.
 
@@ -45,15 +45,15 @@ Currently, this MOD includes:
 
 1. Install this MOD.
 1. Run the [Starbound], and the start game with your profile.
-1. Open **[C]** to craft furnitures, and get them for **free**.
+1. Open **[C]** to craft furnitures, and `craft` them for **free**.
 
     ![How to image](screenshots/howto01-crafting_.png)
 
-1. Open **[E]** to put them.
+1. Open **[E]** to put them, and put them.
 
     ![How to image](screenshots/howto02-putting_.png)
 
-1. Enjoy!!
+1. Have fun!!
 
 
 * TODO: We should make [Crafting Station] for this MOD instead of `Basic crafting`.
