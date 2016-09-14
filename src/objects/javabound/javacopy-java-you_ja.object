@@ -1,0 +1,32 @@
+{
+  "objectName" : "javabound_javacopy-java-you_ja",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 0,
+
+  "description" : "A classical copy, type A. (lang:ja)",
+  "shortdescription" : "Classical copy A(ja)",
+  "race" : "generic",
+
+  "apexDescription" : "What the javaaa+you.",
+  "avianDescription" : "The javaaa+you",
+  "floranDescription" : "Javaaass+Youss",
+  "glitchDescription" : "+YOU",
+  "humanDescription" : "Javaaa + You,",
+  "hylotlDescription" : "Javaaa, javaaa! Javavavavavaaa!!",
+  "novakidDescription" : "Awesome.",
+  
+  "inventoryIcon" : "javacopy-java-you_ja.icon.png",
+  "orientations" : [
+    {
+      "image" : "javacopy-java-you_ja.png:<color>",
+      "imagePosition" : [-112, 0],
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ],
+      "collision" : "platform"
+    }
+  ]
+}

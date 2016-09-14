@@ -1,0 +1,32 @@
+{
+  "objectName" : "javabound_javacopy-downloa-today_ja",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 0,
+
+  "description" : "A classical copy, type B. (lang:ja)",
+  "shortdescription" : "Classical copy B(ja)",
+  "race" : "generic",
+
+  "apexDescription" : "What the downloa.",
+  "avianDescription" : "The downloa",
+  "floranDescription" : "Downloass",
+  "glitchDescription" : "Download",
+  "humanDescription" : "Downloa? Download!",
+  "hylotlDescription" : "Downloaaaaaad todaaaay!!",
+  "novakidDescription" : "Awful.",
+  
+  "inventoryIcon" : "javacopy-downloa-today_ja.icon.png",
+  "orientations" : [
+    {
+      "image" : "javacopy-downloa-today_ja.png:<color>",
+      "imagePosition" : [-128, 0],
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ],
+      "collision" : "platform"
+    }
+  ]
+}

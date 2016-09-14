@@ -1,0 +1,46 @@
+{
+  "objectName" : "javabound_javabo-blue_ja",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 0,
+
+  "description" : "An ancient button for free download. (lang:ja)",
+  "shortdescription" : "Ancient Button(ja)",
+  "race" : "generic",
+
+  "apexDescription" : "What the ancient button.",
+  "avianDescription" : "The ancient button",
+  "floranDescription" : "Ancient buttonss",
+  "glitchDescription" : "Ancient button",
+  "humanDescription" : "Free download, but...",
+  "hylotlDescription" : "Javaaa!? Javaaaaaa!!",
+  "novakidDescription" : "Cool button.",
+
+  // As a long bed
+  "objectType" : "loungeable",
+  "sitPositions" : [
+    [28, 24],
+    [-8, 24],
+    [-36, 24]
+  ],
+  "sitFlipDirection" : true,
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitStatusEffects" : [
+    "regeneration1"
+  ],
+
+  "inventoryIcon" : "javabo-blue_ja.icon.png",
+  "orientations" : [
+    {
+      "image" : "javabo-blue_ja.png:<color>",
+      "imagePosition" : [-56, 0],
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ],
+      "collision" : "platform"
+    }
+  ]
+}

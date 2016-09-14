@@ -1,0 +1,32 @@
+{
+  "objectName" : "javabound_javabo-block_ja",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 0,
+
+  "description" : "A block for free download. (lang:ja)",
+  "shortdescription" : "Red Block(ja)",
+  "race" : "generic",
+
+  "apexDescription" : "What the red block.",
+  "avianDescription" : "The red block",
+  "floranDescription" : "Red blockss",
+  "glitchDescription" : "Red block",
+  "humanDescription" : "Free block!",
+  "hylotlDescription" : "Javavavavaa!!",
+  "novakidDescription" : "Nice block.",
+  
+  "inventoryIcon" : "javabo-block_ja.icon.png",
+  "orientations" : [
+    {
+      "image" : "javabo-block_ja.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 0 }
+  ],
+  "output" : { "item" : "javabound_javabo-block_ja", "count" : 10 },
+  "groups" : ["plain"]
+}

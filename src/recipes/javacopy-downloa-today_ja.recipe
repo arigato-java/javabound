@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 0 }
+  ],
+  "output" : { "item" : "javabound_javacopy-downloa-today_ja", "count" : 1 },
+  "groups" : ["plain"]
+}

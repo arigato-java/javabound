@@ -1,0 +1,42 @@
+{
+  "objectName" : "javabound_javabo_ja",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 0,
+
+  "description" : "A button for free download. (lang:ja)",
+  "shortdescription" : "Red Button(ja)",
+  "race" : "generic",
+
+  "apexDescription" : "What the red button.",
+  "avianDescription" : "The red button",
+  "floranDescription" : "Red buttonss",
+  "glitchDescription" : "Red button",
+  "humanDescription" : "Free download!",
+  "hylotlDescription" : "Javaaa, javaaa!!!!!",
+  "novakidDescription" : "Nice button.",
+
+  // As a long couch
+  "objectType" : "loungeable",
+  "sitPositions" : [
+    [48, 37],
+    [24, 37],
+    [0, 37],
+    [-24, 37],
+    [-48, 37]
+  ],
+
+  "inventoryIcon" : "javabo_ja.icon.png",
+  "orientations" : [
+    {
+      "image" : "javabo_ja.png:<color>",
+      "imagePosition" : [-56, 0],
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ],
+      "collision" : "platform"
+    }
+  ]
+}
