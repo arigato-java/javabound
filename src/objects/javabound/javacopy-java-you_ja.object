@@ -5,8 +5,8 @@
   "category" : "decorative",
   "price" : 0,
 
-  "description" : "A classical copy, type A. (lang:ja)",
-  "shortdescription" : "Classical copy A(ja)",
+  "description" : "The first line of the sign that accompanies a Javabutton. (lang:ja)",
+  "shortdescription" : "Sign of Java 1 (ja)",
   "race" : "generic",
 
   "apexDescription" : "What the javaaa+you.",
