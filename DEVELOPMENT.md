@@ -2,10 +2,12 @@
 
 ## List of objects
 
-Images                |Internal name       |    Description           | Label       | Description(ja) | Label(ja)
-----------------------|--------------------|--------------------------|-------------|-------------|----------
-![javabo]             |javabo              | Red Java Button          | "Free Java Download" | 赤いジャバボタン | "無料ジャバのダウンロード"
-![javabo-blue]        |javabo-blue         | Blue Java Button(old)    | TODO: ???? | 昔の青いジャバボタン| "無料ジャバのダ"
+Images                |Internal name       |    Description             | Label       | Description(ja) | Label(ja)
+----------------------|--------------------|----------------------------|-------------|-------------|----------
+![javabo]             |javabo              | Crimson Javabutton         | "Free Java Download" | 紅いジャバボタン | "無料ジャバのダウンロード"
+![javabo]             |javabo-bench        | Loungeable Crimson Javabutton | "Free Java Download" | 座れる、紅いジャバボタン | "無料ジャバのダウンロード"
+![javabo-blue]        |javabo-blue         | Navy Javabutton            | TODO: ???? | 青いジャバボタン| "無料ジャバのダ"
+![javabo-blue]        |javabo-bench-blue   | Loungeable Navy Javabutton | TODO: ???? | 座れる、青いジャバボタン| "無料ジャバのダ"
 ![javabo-block]       |javabo-block        | Stackable ornament. <br>(The prototype of `Java Button`) |  "J"  | スタックできるブロックのような置物。 <br>(MOD作成中の産物なので実はオマケ) | "ジ"
 ![javacopy-java-you]  |javacopy-java-you   | Message A from Java        | "JAVA+YOU"  | ジャバからのメッセージ A | "あなたとジャバ,"
 ![javacopy-downloa]   |javacopy-downloa    | Message B from Java        | "DOWNLOAD" | ジャバからのメッセージ B | "今すぐダウンロー" |
