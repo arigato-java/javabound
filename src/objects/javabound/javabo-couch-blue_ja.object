@@ -1,0 +1,58 @@
+{
+  "objectName" : "javabound_javabo-couch-blue_ja",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 0,
+
+  "description" : "This archaic couch is a sacred embodiment of unrecompensed download. The Javabutton was blue but there was no god. (lang:ja)",
+  "shortdescription" : "Navy Javacouch (ja)",
+  "race" : "generic",
+
+  "apexDescription" : "What the ancient button.",
+  "avianDescription" : "The ancient button",
+  "floranDescription" : "Ancient buttonss",
+  "glitchDescription" : "Ancient button",
+  "humanDescription" : "Free download, but...",
+  "hylotlDescription" : "Javaaa!? Javaaaaaa!!",
+  "novakidDescription" : "Cool button.",
+
+
+  // Like a long bed
+  "objectType" : "loungeable",
+  "sitPositions" : [
+    [28, 24],
+    [-8, 24],
+    [-36, 24]
+  ],
+  "sitFlipDirection" : true,
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitStatusEffects" : [
+    "regeneration1"
+  ],
+
+
+  // Playable JAVA sound
+  "animation" : "/objects/noisy/noisy.animation",
+  "scripts" : [
+    "/objects/noisy/noisy.lua",
+    "/scripts/npcToyObject.lua"
+  ],
+
+  "sounds" : [ "/sfx/objects/javabound_java22.ogg" ],
+
+
+  "inventoryIcon" : "javabo-couch-blue_ja.icon.png",
+  "orientations" : [
+    {
+      "image" : "javabo-blue_ja.png:couch.off",
+      "imagePosition" : [-56, 0],
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ],
+      "collision" : "platform"
+    }
+  ]
+}

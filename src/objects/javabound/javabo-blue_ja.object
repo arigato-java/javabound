@@ -17,24 +17,44 @@
   "hylotlDescription" : "Javaaa!? Javaaaaaa!!",
   "novakidDescription" : "Cool button.",
 
-  // As a long bed
-  "objectType" : "loungeable",
-  "sitPositions" : [
-    [28, 24],
-    [-8, 24],
-    [-36, 24]
+
+  // Playable JAVA sound
+  "animation" : "/objects/noisy/noisy.animation",
+  "scripts" : [
+    "/objects/noisy/noisy.lua",
+    "/scripts/npcToyObject.lua"
   ],
-  "sitFlipDirection" : true,
-  "sitOrientation" : "lay",
-  "sitAngle" : 90,
-  "sitStatusEffects" : [
-    "regeneration1"
-  ],
+
+  "sounds" : [ "/sfx/objects/javabound_java22.ogg" ],
+
+  // NPC Plays with JavaButton (require "/scripts/npcToyObject.lua")
+  "npcToy" : {
+    "influence" : [
+      "javaSound",
+      "javaSound",
+      "javaSound",
+      "javaSoundComplete"
+    ],
+    "defaultReactions" : {
+      "javaSound" : [
+        [1.0, "gong"]
+      ],
+      "javaSoundComplete" : [
+        [1.0, "smile"],
+        [1.0, "laugh"],
+        [1.0, "love"]
+      ]
+    },
+    "preciseStandPositionLeft" : [-1.5, 0.0],
+    "preciseStandPositionRight" : [1.5, 0.0],
+    "maxNpcs" : 4
+  },
+
 
   "inventoryIcon" : "javabo-blue_ja.icon.png",
   "orientations" : [
     {
-      "image" : "javabo-blue_ja.png:<color>",
+      "image" : "javabo-blue_ja.png:button.off",
       "imagePosition" : [-56, 0],
       "frames" : 1,
 

@@ -1,0 +1,52 @@
+{
+  "objectName" : "javabound_javabo-couch_ja",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 0,
+
+  "description" : "The Javacouch is deepest red. It shrouded oft our martyred dead, and ere their limbs grew stiff and cold, their hearts' blood dyed its every fold. (lang:ja)",
+  "shortdescription" : "Crimson Javacouch (ja)",
+  "race" : "generic",
+
+  "apexDescription" : "What the red button.",
+  "avianDescription" : "The red button",
+  "floranDescription" : "Red buttonss",
+  "glitchDescription" : "Red button",
+  "humanDescription" : "Free download!",
+  "hylotlDescription" : "Javaaa, javaaa!!!!!",
+  "novakidDescription" : "Nice button.",
+
+  // As a long couch
+  "objectType" : "loungeable",
+  "sitPositions" : [
+    [48, 37],
+    [24, 37],
+    [0, 37],
+    [-24, 37],
+    [-48, 37]
+  ],
+
+  // Playable JAVA sound
+  "animation" : "/objects/noisy/noisy.animation",
+  "scripts" : [
+    "/objects/noisy/noisy.lua",
+    "/scripts/npcToyObject.lua"
+  ],
+
+  "sounds" : [ "/sfx/objects/javabound_java22.ogg" ],
+
+
+  "inventoryIcon" : "javabo-couch_ja.icon.png",
+  "orientations" : [
+    {
+      "image" : "javabo_ja.png:couch.off",
+      "imagePosition" : [-56, 0],
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ],
+      "collision" : "platform"
+    }
+  ]
+}

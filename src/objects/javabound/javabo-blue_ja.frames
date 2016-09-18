@@ -1,9 +1,15 @@
 {
   "frameGrid" : {
     "size" : [112, 24],
-    "dimensions" : [1, 1],
+    "dimensions" : [2, 3],
     "names" : [
-      [ "default" ]
+      [ "button.off", "button.on" ],
+      [ "couch.off", "couch.on" ],
+      [ "null.off", "null.on" ]
     ]
+  },
+
+  "aliases" : {
+    "default.default" : "button.off"
   }
 }

@@ -7,12 +7,22 @@
   {
     "op" : "add",
     "path" : "/defaultBlueprints/tier1/-",
-    "value" : { "item" : "javabound_javabo-block_ja" }
+    "value" : { "item" : "javabound_javabo-couch_ja" }
   },
   {
     "op" : "add",
     "path" : "/defaultBlueprints/tier1/-",
     "value" : { "item" : "javabound_javabo-blue_ja" }
+  },
+  {
+    "op" : "add",
+    "path" : "/defaultBlueprints/tier1/-",
+    "value" : { "item" : "javabound_javabo-couch-blue_ja" }
+  },
+  {
+    "op" : "add",
+    "path" : "/defaultBlueprints/tier1/-",
+    "value" : { "item" : "javabound_javabo-block_ja" }
   },
   {
     "op" : "add",
