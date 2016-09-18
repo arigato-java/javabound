@@ -9,28 +9,35 @@ All artifacts contributed by this mod can be crafted for free (as in Free Java D
 
 ![Screenshot04](screenshots/screenshot04_.png) &nbsp; &nbsp; ![Screenshot05](screenshots/screenshot05.png)
 
-## What the hell?
+## Detailed Description of Contents
 
-Currently, this MOD includes:
+This MOD includes:
 
 * Furnitures
-  * あなたとジャバ as **Classical copy A**
+  * あなたとジャバ as **Sign of Java 1 (ja)**
 
-    It behaves a mural painting.
+    The first line of the message that accompanies the Javabutton.
+    This artifact behaves like a mural painting.
 
-  * 今すぐダウンロード as **Classical copy B,C**
+  * 今すぐダウンロー, ド as **Sign of Java 2, 3 (ja)**
 
-    It behaves a mural painting.
+    The second and tertiary lines of runes that accompany the Javabutton.
+    These artifacts behave like mural paintings.
 
-  * Red Java Button as **Red Button**
+  * Red Java Button as **Crimson Javabutton (ja)**
 
-    It behaves like a `wall mounted couch`.
+    The Javabutton is deepest red, as it is dyed with blood of the martyred.
+    You can play with this artifact like a `wall mounted couch`.
 
-  * Blue Java Button as **Ancient Button**
+  * Blue Java Button as **Navy Javabutton**
 
-    It behaves like a `wall mounted bed`.
+    This archaic button is a sacred embodiment of unrecompensated download.
+    Please handle it like a `wall mounted bed`.
 
-  * Red Java Block as **Red Block**, behaves like a table.
+  * Red Java Block as **Crimson Block**
+
+    A tiny block reminiscent of the Javabutton, blessed with mythical rune.
+    This artifact behaves like a table.
 
 * TODO: Now, only in Japanese. Ready to make English version.
 
