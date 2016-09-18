@@ -1,7 +1,7 @@
 # Javabound
 
-This is a MOD for [Starbound], the PC game. Let's enjoy the JAVA world.
-
+Javabound is a [Starbound] MOD that supplies several Javabutton-related artifact blueprints into your crafting interface. This MOD requires Starbound game as a base product. The game is available on [Steam].
+All artifacts contributed by this mod can be crafted for free (as in Free Java Download). "Free as in Free Java Download" is our motto.
 
 ![Screenshot02](screenshots/screenshot02.png)
 
@@ -34,39 +34,35 @@ Currently, this MOD includes:
 
 * TODO: Now, only in Japanese. Ready to make English version.
 
-## How to install
+## Installation
 
-1. Buy [Starbound at Steam].
-1. Open [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=763323158).
-1. Click **Subscribe** button.
-1. Perfect!
+1. Buy [Starbound at Steam]
+1. Go to Javabound page at Steam Workshop
+1. Hit the **Subscribe** button
+1. You're all set!
 
-or
+Those who prefer manual installation can rename the src/ directory to Starbound/mods/javabound/. Beware; our support team may not be able to resolve problems caused by manual installation.
 
-* TODO: The description here for manual installation.
+## Usage
 
-   (Copy src/ directory as  Starbound/mods/javabound/ directory)
-
-## How to use
-
-1. Install this MOD.
-1. Run the [Starbound], and the start game with your profile.
-1. Open **[C]** to craft furnitures, and `craft` them for **free**.
+1. Run Starbound, start a game with your favorite profile.
+1. Hit C key to proceed to crafting interface, choose Java artifact of your choice. Click the Craft button to get your Java artifact instance for free (as in Free Java Download).
 
     ![How to image](screenshots/howto01-crafting_.png)
 
-1. Open **[E]** to put them, and put them.
+1. Hit E key to place your artifact to wherever you like.
 
     ![How to image](screenshots/howto02-putting_.png)
 
-1. Have fun!!
+1. Have fun!!!
 
-
-* TODO: We should make [Crafting Station] for this MOD instead of `Basic crafting`.
+TODO: We are considering a [Crafting Station] for Java artifacts, separate from standard Basic Crafting interface.
 
 ## License
 
-Public domain.
+Public Domain (Not unlike Java).
+
+## References
 
 [Starbound]: http://playstarbound.com/ "Starbound"
 [Crafting Station]: http://starbounder.org/Crafting_Station "Crafting Station - Starbounder - Starbound Wiki"
