@@ -54,7 +54,7 @@
   "inventoryIcon" : "javabo_ja.icon.png",
   "orientations" : [
     {
-      "image" : "javabo_ja.png:button.off",
+      "image" : "javabo_ja.png:<color>.off",
       "imagePosition" : [-56, 0],
       "frames" : 1,
 
