@@ -19,13 +19,27 @@
 
 
   // Playable JAVA sound
-  "animation" : "/objects/noisy/noisy.animation",
+  "animation" : "/objects/wired/switch/switchtoggle.animation",
   "scripts" : [
-    "/objects/noisy/noisy.lua",
+    "/objects/wired/momentaryswitch/momentaryswitch.lua",
     "/scripts/npcToyObject.lua"
   ],
+  // Interval, this object make `ON` when it was hit. 
+  //  seconds = scriptDelta / 60 * interval 
+  "scriptDelta" : 5,    // Ticks of calling update() in script.
+  "interval" : 2,
 
-  "sounds" : [ "/sfx/objects/javabound_java22.ogg" ],
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/javabound_java22.ogg" ]
+    }
+  },
+  "outputNodes" : [ [0, 0] ],       
+  "animationPosition" : [-56, 0],   // centerize same as "orientations"
+  "animationParts" : {
+    "switch" : "javabo_ja.png"      // for .lua and .animation 
+  },
+  
 
   // NPC Plays with JavaButton (require "/scripts/npcToyObject.lua")
   "npcToy" : {
@@ -57,6 +71,7 @@
       "image" : "javabo_ja.png:<color>.off",
       "imagePosition" : [-56, 0],
       "frames" : 1,
+      "direction" : "right",      // prevent mirror writing
 
       "spaceScan" : 0.1,
       "anchors" : [ "background" ],
