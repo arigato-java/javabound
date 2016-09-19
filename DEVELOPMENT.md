@@ -70,11 +70,38 @@ Idea 1
   * "image" : 向きに関わらず、左右反転させないときの画像ファイル指定。(文字があるときに有効)
   * "dualImage" : 向きに応じて、左右反転させる。 (文字が鏡文字になる？)
 
+.animation があるとき、 "image" 指定に関わらず片方が鏡文字になる場合は、
+以下のように "direction" を指定するとよいかもしれない。
+
+```JSON
+  "orientations" : [
+    {
+      (略)
+      "direction" : "right",
+```
+
 ## About interactions
 
 Note: `__unpacked` means [unpacked assets].
 
 ### Momentary switch (押しボタン)
+
+at `*.object`
+
+```JSON
+  "animation" : "/objects/wired/switch/switchtoggle.animation",
+  "scripts" : [
+    "/objects/wired/momentaryswitch/momentaryswitch.lua",
+  ],
+
+  // scriptDelta / 60 * interval 秒間つく
+  "scriptDelta" : 5,    // lua内のupdateイベント実行間隔 (tick数)
+  "interval" : 15,      // offになるまでのカウント(updateイベントが指定回実行されるとオフになる)
+
+  "outputNodes" : [ [0, 0] ],   // 出力穴を1個 (0,0) の位置に配置
+```
+
+他の .animation と被る場合は、.animation を書き起こす必要があるかも。
 
 Ref:
 
@@ -100,6 +127,14 @@ Examples:
 * `__unpacked/objects/wired/persistentswitch/persistentswitch.object`
 * `__unpacked/objects/wired/tinywallswitch/tinywallswitch.object`
 * `__unpacked/objects/wired/smallwallswitch/smallwallswitch.object`
+
+### wiring 組合せ memo
+
+* `Small Wall Button` + `Alert Light` : oneshot(momentary) alert.
+  * `Small Wall Button` :
+  * `Alert Light` :
+* `Small Wall Switch` + `Alert Light` : ON/OFF switch for alert
+
 
 [RFC 6901]: https://tools.ietf.org/html/rfc6901 "RFC 6901 - JavaScript Object Notation (JSON) Pointer"
 [javabo.i]: ./src/objects/javabound/javabo_ja.icon.png
