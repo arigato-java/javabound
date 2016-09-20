@@ -13,7 +13,7 @@ All artifacts contributed by this mod can be crafted for free (as in Free Java D
 
 This MOD includes:
 
-* Furnitures
+* Category: Decorative
   * あなたとジャバ as **Sign of Java 1 (ja)**
 
     The first line of the message that accompanies the Javabutton.
@@ -27,17 +27,29 @@ This MOD includes:
   * Red Java Button as **Crimson Javabutton (ja)**
 
     The Javabutton is deepest red, as it is dyed with blood of the martyred.
-    You can play with this artifact like a `wall mounted couch`.
+    You can play with this artifact like a `percussion instrument`.
 
-  * Blue Java Button as **Navy Javabutton**
+  * Blue Java Button as **Navy Javabutton (ja)**
 
     This archaic button is a sacred embodiment of unrecompensated download.
-    Please handle it like a `wall mounted bed`.
+    You can play with this artifact like a `percussion instrument`.
 
-  * Red Java Block as **Crimson Block**
+  * Red Java Block as **Crimson Block (ja)**
 
     A tiny block reminiscent of the Javabutton, blessed with mythical rune.
     This artifact behaves like a table.
+
+* Category: Furniture
+
+  * Red Java Couch as **Crimson Javacouch (ja)**
+
+    The Javacouch is deepest red, as it is dyed with blood of the martyred.
+    You can play with this artifact like a `wall mounted couch`.
+
+  * Blue Java Couch as **Navy Javacouch (ja)**
+
+    This archaic couch is a sacred embodiment of unrecompensated download.
+    Please handle it like a `wall mounted bed`.
 
 * TODO: Now, only in Japanese. Ready to make English version.
 
