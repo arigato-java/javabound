@@ -46,7 +46,7 @@
   "inventoryIcon" : "javabo-couch-blue_ja.icon.png",
   "orientations" : [
     {
-      "image" : "javabo-blue_ja.png:<color>.off",
+      "image" : "javabo-couch-blue_ja.png:<color>.off",
       "imagePosition" : [-56, 0],
       "frames" : 1,
 
