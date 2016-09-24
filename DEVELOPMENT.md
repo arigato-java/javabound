@@ -1,9 +1,12 @@
 # Docuemnts for javabound developers
 
+Note: `__unpacked` means [unpacked assets].
+
 ## List of objects
 
 Icon                    | Images                |Internal name       |    Description             | Label       | Description(ja) | Label(ja)
 ------------------------|-----------------------|--------------------|----------------------------|-------------|-------------|----------
+![javasta.i]            |![javasta]             |java-crafting-station | Java Factory             | -           | ジャバ工場    | -
 ![javabo.i]             |![javabo]             |javabo              | Crimson Javabutton         | "Free Java Download" | 紅いジャバボタン | "無料ジャバのダウンロード"
 ![javabo-couch.i]       |![javabo-couch]       |javabo-couch        | Loungeable Crimson Javabutton | "Free Java Download" | 座れる、紅いジャバボタン | "無料ジャバのダウンロード"
 ![javabo-blue.i]        |![javabo-blue]        |javabo-blue         | Navy Javabutton            | TODO: ???? | 青いジャバボタン| "無料ジャバのダ"
@@ -82,8 +85,6 @@ Idea 1
 
 ## About interactions
 
-Note: `__unpacked` means [unpacked assets].
-
 ### Momentary switch (押しボタン)
 
 at `*.object`
@@ -136,7 +137,70 @@ Examples:
 * `Small Wall Switch` + `Alert Light` : ON/OFF switch for alert
 
 
+## Making crafting
+
+ref. `__unpacked/objects/crafting/*`
+
+ref. Existing crafting objects(ver 1.1): 
+
+Icon               | Image            |objectName          |Size  | frames
+-------------------|------------------|--------------------|------|--------
+![obj-campfire.i]  |![obj-campfire]   |campfire            |16x16 | 4
+![obj-wooden.i]    |![obj-wooden]     |woodencookingtable  |32x36 | 1
+![obj-furnace1.i]  |![obj-furnace1]   |craftingfurnace     |24x24 | 4
+![obj-furnace2.i]  |![obj-furnace2]   |craftingfurnace     |24x24 | 4
+![obj-pixelc.i]    |![obj-pixelc]     |pixelcompressor     |48x32 | 8
+
+### Directory
+
+* `/interface/javabound/*.png`: Parts of UI.
+
+### `*.object` template
+
+interactData:
+
+```JSON
+  // (略)
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    // Search "crafting.*\.config" ...
+    // Ex. crafting.config
+    // Ex. craftingmerchant.config
+    "config" : "/interface/windowconfig/crafting*****.config",
+    
+    // Crafting category
+    // Ex. "campfire",
+    "filter" : [ "*****" ],
+
+    // Override interface
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " *******************",
+        "subtitle" : " ***********************************"
+        "icon" : {
+          "file" : "/interface/javabound/****icon.png"
+        }
+      }
+    }
+  },
+  // (略)
+```
+
+## Sound Effects
+
+* `sfx/objects/`
+  * `javabound_java22.ogg` (Public Domain)
+
+    From <https://github.com/arigato-java/java_sound>
+
+  * `javabound-download00.ogg` (Public Domain)
+
+    Edited from `sounds/Dial Up Modem-SoundBible.com-909377495.flac`
+    <http://soundbible.com/136-Dial-Up-Modem.html>
+
+
 [RFC 6901]: https://tools.ietf.org/html/rfc6901 "RFC 6901 - JavaScript Object Notation (JSON) Pointer"
+[javasta.i]: ./src/objects/javabound/java-crafting-station.icon.png
 [javabo.i]: ./src/objects/javabound/javabo_ja.icon.png
 [javabo-couch.i]: ./src/objects/javabound/javabo-couch_ja.icon.png
 [javabo-blue.i]: ./src/objects/javabound/javabo-blue_ja.icon.png
@@ -145,6 +209,7 @@ Examples:
 [javacopy-java-you.i]: ./src/objects/javabound/javacopy-java-you_ja.icon.png
 [javacopy-downloa.i]: ./src/objects/javabound/javacopy-downloa-today_ja.icon.png
 [javacopy-do.i]: ./src/objects/javabound/javacopy-do_ja.icon.png
+[javasta]: ./src/objects/javabound/java-crafting-station.png
 [javabo]: ./src/objects/javabound/javabo_ja.png
 [javabo-couch]: ./src/objects/javabound/javabo_ja.png
 [javabo-blue]: ./src/objects/javabound/javabo-blue_ja.png
@@ -155,3 +220,13 @@ Examples:
 [javacopy-do]: ./src/objects/javabound/javacopy-do_ja.png
 [frames]: http://starbounder.org/Data:Assets/frames "Data:Assets/frames - Starbounder - Starbound Wiki"
 [unpacked assets]: http://starbounder.org/Modding:Modding_Basics#Step_1_-_Unpacking_Assets
+[obj-campfire]: http://starbounder.org/mediawiki/images/7/75/Campfire.gif
+[obj-campfire.i]: http://starbounder.org/mediawiki/images/5/5a/Campfire_Icon.png
+[obj-furnace1]: http://starbounder.org/mediawiki/images/a/ac/Primitive_Furnace.gif
+[obj-furnace1.i]: http://starbounder.org/mediawiki/images/b/b2/Primitive_Furnace_Icon.png
+[obj-furnace2]: http://starbounder.org/mediawiki/images/0/03/Industrial_Furnace.gif
+[obj-furnace2.i]: http://starbounder.org/mediawiki/images/d/d1/Industrial_Furnace_Icon.png
+[obj-wooden]: http://starbounder.org/mediawiki/images/d/d7/Wooden_Workbench.png
+[obj-wooden.i]: http://starbounder.org/mediawiki/images/e/e8/Wooden_Workbench_Icon.png
+[obj-pixelc]: http://starbounder.org/mediawiki/images/7/78/Pixel_Compressor.gif
+[obj-pixelc.i]: http://starbounder.org/mediawiki/images/9/9b/Pixel_Compressor_Icon.png
