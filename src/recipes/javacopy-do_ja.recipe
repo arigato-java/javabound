@@ -3,5 +3,5 @@
     { "item" : "money", "count" : 0 }
   ],
   "output" : { "item" : "javabound_javacopy-do_ja", "count" : 1 },
-  "groups" : ["plain"]
+  "groups" : ["javabound"]
 }

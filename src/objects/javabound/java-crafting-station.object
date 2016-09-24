@@ -1,0 +1,77 @@
+{
+  "objectName" : "javabound_crafting-station",
+  "colonyTags" : ["crafting", "commerce", "java"],
+  "rarity" : "Common",
+  "description" : "The coffee maker is used to produce JAVA products for free. JAVA+YOU, PRODUCE TODAY!",
+  "shortdescription" : "^orange;Java Factory^white;",
+  "race" : "generic",
+  "category" : "crafting",
+
+
+  "apexDescription" : "This device reminds me of Big Ape.",
+  "avianDescription" : "The avian know similar sacred device.",
+  "floranDescription" : "Java!",
+  "glitchDescription" : "Unbelievable. This machine can place once, and can produce anywhere.",
+  "humanDescription" : "A Java factory. In the past, humans used technology like this.",
+  "hylotlDescription" : " Java + You,\nDownload Today.",
+  "novakidDescription" : "An old coffee maker. Seems boring.",
+
+
+  // Crafting UI
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/crafting.config",
+
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Java Factory",
+        "subtitle" : "Software production management system"
+
+        // , "icon" : {
+        //   "file" : "/interface/javabound/javaicon.png"
+        // }
+      },
+
+      // Override a label of default buttons 
+      "lblSchematics" : {
+        "value" : "^#b9b5b2;SPECS"
+      },
+      "lblProducttitle" : {
+        "value" : "^#b9b5b2;PRODUCT"
+      },
+      "btnCraft" : {
+        "caption": "Download"
+      },
+      "btnStopCraft": {
+        "caption": "Cancel"
+      }
+    },
+
+    // A sound effect after the crafting button pressed. 
+    "craftingSound" : "/sfx/objects/javabound_download00.ogg",
+    
+    // Craftable groups which are written in `*.recipe`.
+    "filter" : [ "javabound" ]
+  },
+
+
+  // A bug? It doesn't play sounds, when the window opens...
+  //"sounds" : [ "/sfx/objects/javabound_java22.ogg" ],
+
+
+  "inventoryIcon" : "javabo-null_ja.icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "/objects/outpost/coffeemachine/coffeemachine.png:<color>",
+
+      "lightPosition" : [8, 8],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

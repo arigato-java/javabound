@@ -2,6 +2,11 @@
   {
     "op" : "add",
     "path" : "/defaultBlueprints/tier1/-",
+    "value" : { "item" : "javabound_crafting-station" }
+  },
+  {
+    "op" : "add",
+    "path" : "/defaultBlueprints/tier1/-",
     "value" : { "item" : "javabound_javabo_ja" }
   },
   {
