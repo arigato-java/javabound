@@ -72,6 +72,7 @@ Idea 1
 * "orientations"
   * "image" : 向きに関わらず、左右反転させないときの画像ファイル指定。(文字があるときに有効)
   * "dualImage" : 向きに応じて、左右反転させる。 (文字が鏡文字になる？)
+  * "imageLayers" : レイヤーを多層にするとき。
 
 .animation があるとき、 "image" 指定に関わらず片方が鏡文字になる場合は、
 以下のように "direction" を指定するとよいかもしれない。
@@ -82,6 +83,24 @@ Idea 1
       (略)
       "direction" : "right",
 ```
+
+### imageLayers の例:
+
+`"fullbright" : true` を付加すると、ライティングを無視(?)して表示できる。
+
+下記の例では、 `java-crafting-station.png` を(ライトを無視して)はっきり表示し、
+その上に override する形で `java-crafting-station.lit.png` を表示している。
+
+一部を目立たせるオブジェクトに使うとよさそうである。
+
+```JSON
+      "imageLayers" : [
+        { "image" : "java-crafting-station.png:<color>.<frame>", "fullbright" : true }, 
+        { "image" : "java-crafting-station.lit.png:<color>.<frame>" } 
+      ],
+```
+
+実際の例: `vendingmachine`
 
 ## About interactions
 
@@ -176,7 +195,7 @@ interactData:
     "paneLayoutOverride" : {
       "windowtitle" : {
         "title" : " *******************",
-        "subtitle" : " ***********************************"
+        "subtitle" : " ***********************************",
         "icon" : {
           "file" : "/interface/javabound/****icon.png"
         }
