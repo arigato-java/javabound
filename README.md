@@ -51,7 +51,7 @@ This MOD includes:
     This archaic couch is a sacred embodiment of unrecompensated download.
     Please handle it like a `wall mounted bed`.
 
-* TODO: Now, only in Japanese. Ready to make English version.
+* TODO: Runes that represent the soul of Java are currently in Japanese language. English version is under preparation. We appreciate your continued support for our product!
 
 ## Installation
 
@@ -65,17 +65,18 @@ Those who prefer manual installation can rename the src/ directory to Starbound/
 ## Usage
 
 1. Run Starbound, start a game with your favorite profile.
-1. Hit C key to proceed to crafting interface, choose Java artifact of your choice. Click the Craft button to get your Java artifact instance for free (as in Free Java Download).
+1. You need an Inventor's Table. If you haven't crafted one yet, hit C key to open the Crafting interface, then craft an Inventor's Table before putting it in a convenient place.
+1. Use the Inventor's Table to craft a Java Factory. It should look like headquarters of some database company.
+1. Use the Java Factory with pressing the E key on it.
+1. Choose Java artifact of your choice. Click the Craft button to get your Java artifact instances for free (as in Free Java Download).
 
     ![How to image](screenshots/howto01-crafting_.png)
 
-1. Hit E key to place your artifact to wherever you like.
+1. Place your artifact to wherever you like.
 
     ![How to image](screenshots/howto02-putting_.png)
 
 1. Have fun!!!
-
-TODO: We are considering a [Crafting Station] for Java artifacts, separate from standard Basic Crafting interface.
 
 ## License
 
