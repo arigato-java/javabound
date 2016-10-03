@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 220 }
+  ],
+  "output" : { "item" : "javabound_java-server02", "count" : 1 },
+  "groups" : ["javabound"]
+}

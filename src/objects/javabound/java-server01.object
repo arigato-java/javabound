@@ -1,0 +1,66 @@
+{
+  "objectName" : "javabound_java-server01",
+  "colonyTags" : ["storage", "java"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "description" : "The server is a storage for JAVA.",
+  "shortdescription" : "Java Server(2U)",
+  "race" : "generic",
+  "category" : "storage",
+  "price" : 80,
+  "health" : 4.0,
+
+  "apexDescription" : "This server reminds me of Big Ape.",
+  "avianDescription" : "The avian know similar storage.",
+  "floranDescription" : "JAVA!",
+  "glitchDescription" : "Incredible. This server can place once, and can store anything.",
+  "humanDescription" : "A Java server. In the past, humans used technology like this.",
+  "hylotlDescription" : "The server is'nt NotJava.",
+  "novakidDescription" : "An old server. Seems wearisome.",
+
+
+  // For "storage"
+  "openSounds" : [ "/sfx/objects/bunkercabinet_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/bunkercabinet_close.ogg" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+
+  "inventoryIcon" : "java-server01.icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ 
+        { "image" : "java-server01.png:<color>.<frame>", "fullbright" : true }, 
+        { "image" : "java-server01.lit.png:<color>.<frame>" } 
+      ],
+      "direction" : "left",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 8,
+      "animationCycle" : 2.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    },
+    {
+      "imageLayers" : [ 
+        { "image" : "java-server01.png:<color>.<frame>", "fullbright" : true }, 
+        { "image" : "java-server01.lit.png:<color>.<frame>" } 
+      ],
+      "flipImages" : true,
+      "direction" : "right",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 8,
+      "animationCycle" : 2.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ]
+}
