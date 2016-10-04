@@ -20,24 +20,6 @@
   },
   "animationCustom" : { },
 
-
-  "orientations" : [
-    {
-      "animationParts" : {
-        "handle" : "",
-        "blade" : "javasword.left.png"
-      },
-      "direction" : "left"
-    },
-    {
-      "animationParts" : {
-        "handle" : "",
-        "blade" : "javasword.png"
-      },
-      "direction" : "right"
-    }
-  ],
-
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
   "elementalType" : "fire",
@@ -45,14 +27,23 @@
   "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {
     "fireTime" : 0.90,
-    "baseDps" : 12
+    "baseDps" : 11
   },
 
+  // TODO: add a new image of an effect for giantsword
   "altAbilityType" : "giantsword",
+  "altAbility" : {
+    "stances" : {
+      "windup" : {
+        "armRotation" : 110
+      }
+    }
+  },
+ 
   //"altAbilityType" : "risingslash",
   //"altAbilityType" : "uppercut",
   //"altAbilityType" : "groundslam",
-  //"altAbilityType" : "kunaiblast",
+  //"altAbilityType" : "charge",
   //"altAbilityType" : "elementalpillar",
 
 
