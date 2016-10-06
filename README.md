@@ -1,6 +1,6 @@
 # Javabound
 
-Javabound is a [Starbound] MOD that supplies several Javabutton-related artifact blueprints into your crafting interface. This MOD requires Starbound game as a base product. The game is available on [Steam].
+`Javabound` is a [Starbound] MOD that supplies several Javabutton-related artifact blueprints into your crafting interface. This MOD requires Starbound game as a base product. The game is available on [Steam].
 All artifacts contributed by this mod can be crafted for free (as in Free Java Download). "Free as in Free Java Download" is our motto.
 
 ![Screenshot02](screenshots/screenshot02.png)
@@ -56,7 +56,7 @@ This MOD includes:
 ## Installation
 
 1. Buy [Starbound at Steam]
-1. Go to Javabound page at Steam Workshop
+1. Go to `Javabound` page at Steam Workshop
 1. Hit the **Subscribe** button
 1. You're all set!
 
@@ -65,9 +65,15 @@ Those who prefer manual installation can rename the src/ directory to Starbound/
 ## Usage
 
 1. Run Starbound, start a game with your favorite profile.
-1. You need an Inventor's Table. If you haven't crafted one yet, hit C key to open the Crafting interface, then craft an Inventor's Table before putting it in a convenient place.
-1. Use the Inventor's Table to craft a Java Factory. It should look like headquarters of some database company.
-1. Use the Java Factory with pressing the E key on it.
+1. You need an `Inventor's Table`. If you haven't crafted one yet, hit C key to open the Crafting interface, then craft an `Inventor's Table` before putting it in a convenient place.
+1. Use the `Inventor's Table` to craft a `Java Factory`. It should look like headquarters of some database company.
+
+    ![How to image](screenshots/howto03-craft-java-factory_.png)
+
+1. Use the `Java Factory` with pressing the E key on it.
+   
+   ![How to image](screenshots/howto04-open-java-factory.png)
+
 1. Choose Java artifact of your choice. Click the Craft button to get your Java artifact instances for free (as in Free Java Download).
 
     ![How to image](screenshots/howto01-crafting_.png)
@@ -81,8 +87,6 @@ Those who prefer manual installation can rename the src/ directory to Starbound/
 ## License
 
 Public Domain (Not unlike Java).
-
-## References
 
 [Starbound]: http://playstarbound.com/ "Starbound"
 [Crafting Station]: http://starbounder.org/Crafting_Station "Crafting Station - Starbounder - Starbound Wiki"
