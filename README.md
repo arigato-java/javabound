@@ -5,7 +5,7 @@ All artifacts contributed by this mod can be crafted for free (as in Free Java D
 
 ![Screenshot02](screenshots/screenshot02.png)
 
-![Screenshot03](screenshots/screenshot03.png)
+![Screenshot03](screenshots/screenshot06-v1.1.png)
 
 ![Screenshot04](screenshots/screenshot04_.png) &nbsp; &nbsp; ![Screenshot05](screenshots/screenshot05.png)
 
