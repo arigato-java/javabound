@@ -1,0 +1,51 @@
+{
+  "itemName" : "javabound_javasword",
+  "price" : 2000,
+  "level" : 5,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "It's a free broadsword.",
+  "shortdescription" : "Downloading Stick",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword","java"],
+
+  "inventoryIcon" : "javasword.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "javasword.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.90,
+    "baseDps" : 11
+  },
+
+  // TODO: add a new image of an effect for giantsword
+  "altAbilityType" : "giantsword",
+  "altAbility" : {
+    "stances" : {
+      "windup" : {
+        "armRotation" : 110
+      }
+    }
+  },
+ 
+  //"altAbilityType" : "risingslash",
+  //"altAbilityType" : "uppercut",
+  //"altAbilityType" : "groundslam",
+  //"altAbilityType" : "charge",
+  //"altAbilityType" : "elementalpillar",
+
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
