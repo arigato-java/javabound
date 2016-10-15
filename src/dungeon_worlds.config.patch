@@ -1,0 +1,19 @@
+[
+  {
+    "op" : "add",
+    "path" : "/javabound-protomission",
+    "value" : {
+      "primaryDungeon" : "javabound-protomission",
+      "threatLevel" : 6,
+      "gravity" : 80,
+      "worldSize" : [2000, 2000],
+      "dungeonBaseHeight" : 1000,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/aviantemple",
+//      "musicTrack" : "/music/casiopeia.ogg",
+      "musicTrack" : "/music/desert-exploration2.ogg",
+      "biome": "desert",
+      "environmentStatusEffects" : ["dontstarve"]
+    }
+  }
+]

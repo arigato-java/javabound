@@ -217,6 +217,180 @@ interactData:
     Edited from `sounds/Dial Up Modem-SoundBible.com-909377495.flac`
     <http://soundbible.com/136-Dial-Up-Modem.html>
 
+## Make missions(dungeon map)
+
+* `dungeons/missions/javamission/javamission.dungeon`
+* `dungeons/missions/javamission/javamission.json`
+
+参考: http://starbounder.org/Modding:Tiled/Example_Mission
+
+## FAQ about making mission
+
+### Q. 何を使えば mission マップが作れるか？
+
+A. **[Tiled] を使う。** `dungeons/missions/*/*.json` を追加、編集していく。
+
+**Tiled は0.15系を使う** 事。
+0.16系では、JSONの出力フォーマットに Starbound 側が対応しておらず、ダンジョンへのワープ時にエラーが出てしまう。 https://github.com/bjorn/tiled/releases/tag/v0.15.2
+
+
+### Q. 敵の配置方法は？
+
+**A. Tiled にて、 `mosters & npcs` レイヤーに「四角形」を追加し、カスタムプロパティを設定** する。
+
+カスタムプロパティの設定例:
+
+* monster: apexmutant
+
+四角形の大きさのタイル数分、敵が出現する模様。
+
+
+### Q. NPC の配置方法は？
+
+**A. Tiled にて、 `mosters & npcs` レイヤーに「四角形」を追加し、カスタムプロパティを設定** する。 「四角形」の大きさは 1 x 1 タイル分。
+
+カスタムプロパティの設定例:
+
+* npc: apex
+* typeName: apexscientist
+
+タイルの枚数分、キャラが出現する模様。
+
+
+### Q. 片方から近づくと開くドアの設置方法は？
+
+**A. wiring の `scanner` とドアを組み合わせる。**
+
+todo: 設置オブジェクトがあっているか確認する
+
+todo: wiring しないと開かないドアの見つけ方はないか？
+
+例:
+
+1. `objects-by-category/door` にある `apexslidingdoor1`(ID: 51) を `objects` レイヤーに設置する。
+
+    ![apexslidingdoor1.png]
+
+1. `objects-by-category/wire` にある `scanner` (ID:6?) を `objects` レイヤーに設置すし、 上記door の隣へ位置する。
+1. 「ポリライン」を `wiring` レイヤーに追加し、door の赤い点を scanner の青い点につなぐように位置する。
+1. OK.
+
+
+### Q. ドアを開いた後、複数の明かりをつけっぱなしにする方法は？
+
+**A. `Persistent Switch` とドア、明かりを組み合わせる**
+
+> :note: Wiring の `Persistent Switch` を使うと、スイッチを「押しっぱなし」にできる。
+
+todo: スクショを入れる
+
+1. `objects-by-category/wire` にある  `persistentswitch`(ID:67, 青2,赤1) 回路 を `objects` レイヤーに配置する。
+
+    ![persistentswitch.png]
+
+    > :note: 壁で囲む等、プレイヤーから見えない場所へ位置すると、回路が隠れてよい
+
+1. 「ポリライン」を `wiring` レイヤーに追加し、スイッチとしたいオブジェクトの赤い点から、 `persistentswitch` の青い点につなぐように位置する。(一か所に一つ)
+1. 「ポリライン」を `wiring` レイヤーに明かりの数だけ追加し、 `persistentswitch` の赤い点から、 明かりの各青い点につなぐ。
+1. OK.
+
+
+### Q. 二つスイッチを押すと開くドアの設置方法は？
+
+**A. `And` と二つのスイッチ、ドアを組み合わせる**
+
+> :note: Wiring の `And` を使うと「2つ押すとオンになる」ようにできる。
+
+todo: 設置オブジェクトがあっているか確認する
+
+todo: スクショを入れる
+
+1. ドアは設置してあるものとする。
+1. `objects-by-category/wire` にある  `and`(ID:23,青2,赤1) 回路 を `objects` レイヤーに配置する。
+
+    ![and.png]
+
+1. 「ポリライン」を `wiring` レイヤーに2本追加し、スイッチとしたいオブジェクト2つのそれぞれの赤い点から、 `and` の青い点に一つずつなぐように位置する。(一か所に一つ)
+1. 「ポリライン」を `wiring` レイヤーに1本追加し、`and` の青い点から、ドア の赤い点につなぐように位置する。
+
+    > :note: `and` から複数のドアにつないでも、機能します。
+
+1. OK.
+
+
+### Q. 場所を通るときに、左下に顔つきのメッセージを表示するには？
+
+**A. 「四角形」を追加しカスタムプロパティを設定、  `radiomessages/*.radiomessages` にメッセージ内容を書く。**
+
+
+1. 適当なレイヤーに「四角形」を追加し、カスタムプロパティを設定する。
+
+    カスタムプロパティの設定例:
+
+    * parameters: { "radioMessage" : "mymission01" }
+    * stagehand: radiomessage
+
+1. radiomessages/mymission.radiomessages を配置：
+
+    例:
+
+    ```JSON
+    {
+      "mymission01" : {
+        "type" : "mission",
+        "text" : "Foobar, foo foo, bar. Xy, xyzzy. (←メッセージ内容)"
+      },
+
+      "mymission02" : {
+      //(略)
+    }
+    ```
+1. OK.
+
+
+メッセージの応用例:
+
+```JSON
+  // ジャバ仙人に、顔グラフィックつきで、2秒間、ジャバジャバ言わせる
+  "mymission01" : {
+    "unique" : false,
+    "senderName" : "Java Sennin",
+    "portraitImage" : "/interface/chatbubbles/javabound_javasennin.png:<frame>",
+    "persistTime" : 2.0,
+    "text" : "Java, Java, Java!"
+  },
+```
+
+### Q. 通過したドアが閉まるようにするには？
+
+**A1.  `Invisible Proximity Sensor`(HIDE表示のオブジェクト) の「出力」と ドアの「入力」を組み合わせて使う**
+
+* todo 要確認
+* todo: 詳細を書く。 `Invisible Proximity Sensor` と `Persistent_Switch` のオフを繋げばいけるかも。
+
+**A2. `Proximity Sensor` を狭い通路に配置して、ドアと…**
+
+* todo 要確認
+* todo: 詳細を書く。
+
+> :note: ボス戦前に使われている `bossdoor` を使う方法もあるが、ボス戦を表すアイコンとして機能しているようなので、道中での利用は避けたい。
+
+
+### Q. ボス戦後にドアを開ける
+
+A. `parameters: {locked: true}` がカスタムプロパティにセットされているドアを用意し、その上に、 四角形を書き、以下のようなカスタムプロパティを設定する。
+
+* parameters: `{ "bossIds" : [ "(ボスのid)" ], "open" : true }
+* stagehand: `bossdooropener`
+
+
+* todo: 要確認
+* todo: 詳細を書く。 
+
+> :note: 既存のミッションでも多用されている。
+
+ 
+
 
 [RFC 6901]: https://tools.ietf.org/html/rfc6901 "RFC 6901 - JavaScript Object Notation (JSON) Pointer"
 [javasta.i]: ./src/objects/javabound/java-crafting-station.icon.png
@@ -249,3 +423,7 @@ interactData:
 [obj-wooden.i]: http://starbounder.org/mediawiki/images/e/e8/Wooden_Workbench_Icon.png
 [obj-pixelc]: http://starbounder.org/mediawiki/images/7/78/Pixel_Compressor.gif
 [obj-pixelc.i]: http://starbounder.org/mediawiki/images/9/9b/Pixel_Compressor_Icon.png
+[Tiled]: http://www.mapeditor.org/ "Tiled Map Editor"
+[apexslidingdoor1.png]: http://starbounder.org/mediawiki/images/9/99/Light_Sliding_Door.gif
+[and.png]: http://starbounder.org/mediawiki/images/d/de/AND_Switch.png
+[persistentswitch.png]: http://starbounder.org/mediawiki/images/b/ba/Persistent_Switch.gif
