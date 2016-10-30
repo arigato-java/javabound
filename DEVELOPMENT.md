@@ -217,6 +217,20 @@ interactData:
     Edited from `sounds/Dial Up Modem-SoundBible.com-909377495.flac`
     <http://soundbible.com/136-Dial-Up-Modem.html>
 
+  * `javabound_java-server_loop.ogg` (Public Domain)
+
+    Contributed by @tomari
+    <https://github.com/arigato-java/javabound/issues/18>
+
+### Objects毎の環境音を設定する方法
+
+例: `*.object` に以下のように追加すると、サーバーの動作音がなる。
+`soundEffectRangeMultiplier` の調整により、かなり近いたときに音が聞こえる。
+
+```JSON
+  "soundEffect" : "/sfx/objects/javabound_java-server_loop.ogg",
+  "soundEffectRangeMultiplier" : 0.5
+```
 
 [RFC 6901]: https://tools.ietf.org/html/rfc6901 "RFC 6901 - JavaScript Object Notation (JSON) Pointer"
 [javasta.i]: ./src/objects/javabound/java-crafting-station.icon.png

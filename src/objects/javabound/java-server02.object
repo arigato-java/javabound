@@ -29,6 +29,11 @@
   "autoCloseCooldown" : 3600,
 
 
+  // Play a environmental sound of server.
+  "soundEffect" : "/sfx/objects/javabound_java-server_loop.ogg",
+  "soundEffectRangeMultiplier" : 0.50,
+
+
   "inventoryIcon" : "java-server02.icon.png",
   "orientations" : [
     {

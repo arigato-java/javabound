@@ -28,6 +28,10 @@
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600,
 
+  // Play a environmental sound of server.
+  "soundEffect" : "/sfx/objects/javabound_java-server_loop.ogg",
+  "soundEffectRangeMultiplier" : 0.20,
+
 
   "inventoryIcon" : "java-server01.icon.png",
   "orientations" : [
