@@ -4,20 +4,20 @@
   "rarity" : "Common",
   "objectType" : "container",
   "tooltipKind" : "container",
-  "description" : "The server is a storage for JAVA.",
-  "shortdescription" : "Java Server(2U)",
+  "description" : "Server is to Java what body is to mind.",
+  "shortdescription" : "Java Server (2U)",
   "race" : "generic",
   "category" : "storage",
   "price" : 80,
   "health" : 4.0,
 
   "apexDescription" : "This server reminds me of Big Ape.",
-  "avianDescription" : "The avian know similar storage.",
+  "avianDescription" : "Can I have the SLA for this server?",
   "floranDescription" : "JAVA!",
-  "glitchDescription" : "Incredible. This server can place once, and can store anything.",
-  "humanDescription" : "A Java server. In the past, humans used technology like this.",
-  "hylotlDescription" : "The server is'nt NotJava.",
-  "novakidDescription" : "An old server. Seems wearisome.",
+  "glitchDescription" : "This server is crying.",
+  "humanDescription" : "A Java server. Human stopped using these servers long before.",
+  "hylotlDescription" : "Java is nice when it is on a big-endian processor with a strong-ordered memory model.",
+  "novakidDescription" : "Who buys small servers nowadays? Why don't they migrate to the cloud?",
 
 
   // For "storage"

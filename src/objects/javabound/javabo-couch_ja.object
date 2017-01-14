@@ -9,13 +9,13 @@
   "shortdescription" : "Crimson Javacouch (ja)",
   "race" : "generic",
 
-  "apexDescription" : "What the red button.",
-  "avianDescription" : "The red button",
-  "floranDescription" : "Red buttonss",
-  "glitchDescription" : "Red button",
-  "humanDescription" : "Free download!",
+  "apexDescription" : "Why is this couch bloody?",
+  "avianDescription" : "Any optional offer please?",
+  "floranDescription" : "How many devices run Java?",
+  "glitchDescription" : "Why do I need Java?",
+  "humanDescription" : "Java Update Available!",
   "hylotlDescription" : "Javaaa, javaaa!!!!!",
-  "novakidDescription" : "Nice button.",
+  "novakidDescription" : "Java is THE rocket science.",
 
   // As a long couch
   "objectType" : "loungeable",
