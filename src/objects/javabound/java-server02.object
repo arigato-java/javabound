@@ -4,20 +4,20 @@
   "rarity" : "Common",
   "objectType" : "container",
   "tooltipKind" : "container",
-  "description" : "The server is a large storage for JAVA.",
-  "shortdescription" : "Java Server(8U)",
+  "description" : "A big iron with unparalleled capacity to keep JAVA.",
+  "shortdescription" : "Java Server (8U)",
   "race" : "generic",
   "category" : "storage",
   "price" : 200,
   "health" : 4.0,
 
-  "apexDescription" : "This server reminds me of Big Ape.",
-  "avianDescription" : "The avian know similar storage.",
+  "apexDescription" : "This server reminds me of the Big Ape.",
+  "avianDescription" : "Does you even lift this server?",
   "floranDescription" : "JAVA!",
-  "glitchDescription" : "Incredible. This server can place once, and can store anything.",
-  "humanDescription" : "A Java server. In the past, humans used technology like this.",
-  "hylotlDescription" : "The server is'nt NotJava.",
-  "novakidDescription" : "An old server. Seems wearisome.",
+  "glitchDescription" : "An incredible piece of technology. Install once, keep anything.",
+  "humanDescription" : "Looks like a Java server. Humanity used technology like this in the past.",
+  "hylotlDescription" : "The server is not NotJava.",
+  "novakidDescription" : "An obsolete server. We've moved everything to the cloud.",
 
 
   // For "storage"

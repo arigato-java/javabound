@@ -9,13 +9,13 @@
   "shortdescription" : "Crimson Block (ja)",
   "race" : "generic",
 
-  "apexDescription" : "What the red block.",
-  "avianDescription" : "The red block",
-  "floranDescription" : "Red blockss",
-  "glitchDescription" : "Red block",
+  "apexDescription" : "What does this sign say?",
+  "avianDescription" : "It's a bird, it's a plane, it's a Javabutton!",
+  "floranDescription" : "Javabutton is in the ruby color. What does this imply?",
+  "glitchDescription" : "Does this red block have any political meanings?",
   "humanDescription" : "Free block!",
   "hylotlDescription" : "Javavavavaa!!",
-  "novakidDescription" : "Nice block.",
+  "novakidDescription" : "Nice complimentary block.",
   
   "inventoryIcon" : "javabo-block_ja.icon.png",
   "orientations" : [

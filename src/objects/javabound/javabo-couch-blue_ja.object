@@ -5,15 +5,15 @@
   "category" : "furniture",
   "price" : 0,
 
-  "description" : "This archaic couch is a sacred embodiment of unrecompensated download. (lang:ja)",
+  "description" : "This archaic couch is a comfortable embodiment of unrecompensated download. (lang:ja)",
   "shortdescription" : "Navy Javacouch (ja)",
   "race" : "generic",
 
-  "apexDescription" : "What the ancient button.",
-  "avianDescription" : "The ancient button",
-  "floranDescription" : "Ancient buttonss",
-  "glitchDescription" : "Ancient button",
-  "humanDescription" : "Free download, but...",
+  "apexDescription" : "You must be really proud of having this in your room.",
+  "avianDescription" : "Beware, it sinks when you sit on this ancient button.",
+  "floranDescription" : "By pressing this button you agree to the EULA.",
+  "glitchDescription" : "A nice and weathered couch.",
+  "humanDescription" : "Free download, no hidden charges 100% guarantee.",
   "hylotlDescription" : "Javaaa!? Javaaaaaa!!",
   "novakidDescription" : "Cool button.",
 
