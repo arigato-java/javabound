@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/code
+    docker:
+      - image: circleci/node:6
+    steps:
+      - checkout
+      - run:
+          name: run test
+          command: ./scripts/json-check.sh
+
